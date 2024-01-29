@@ -1,4 +1,34 @@
 #!/usr/bin/make -f
 
+UPSTREAM_GIT := https://github.com/aafigure/aafigure
+include /usr/share/openstack-pkg-tools/pkgos.make
+
 %:
-	dh $@
+	dh $@ --with python3,sphinxdoc
+
+override_dh_auto_clean:
+	rm -rf build .stestr
+	find . -iname '*.pyc' -delete
+	for i in $$(find . -type d -iname __pycache__) ; do rm -rf $$i ; done
+
+override_dh_auto_build:
+	echo "Do nothing..."
+
+override_dh_auto_install:
+	pkgos-dh_auto_install --no-py2 --in-tmp
+
+ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+	echo "No tests for now..."
+endif
+
+override_dh_auto_test:
+	echo "Do nothing..."
+
+override_dh_sphinxdoc:
+ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
+	PYTHONPATH=. python3 -m sphinx -b html documentation $(CURDIR)/debian/python3-aafigure/usr/share/doc/python3-aafigure/html
+	dh_sphinxdoc
+endif
+
+override_dh_python3:
+	dh_python3 --shebang=/usr/bin/python3

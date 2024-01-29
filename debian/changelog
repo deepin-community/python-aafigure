@@ -1,5 +1,11 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-aafigure (0.6-2) unstable; urgency=medium
 
-  * Initial release
+  * Uploading to unstable.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Thomas Goirand <zigo@debian.org>  Wed, 29 Sep 2021 13:55:39 +0200
+
+python-aafigure (0.6-1) unstable; urgency=medium
+
+  * Initial packaging (Closes: #994523).
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 17 Sep 2021 08:55:16 +0200

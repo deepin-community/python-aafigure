@@ -1,22 +1,61 @@
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: aafigure
+Source: https://github.com/aafigure/aafigure
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+Copyright: (c) 2019, Chris Liechti <cliechti@gmx.net>
+ (c) 2006-2011, aafigure-team at https://launchpad.net/aafigure
+License: BSD-3-clause
+
+Files: aafigure/sphinxext.py
+Copyright: Leandro Lucarella <llucax@gmail.com>
+License: BOLA
+
+Files: debian/*
+Copyright: (c) 2019, Thomas Goirand <zigo@debian.org>
+License: BSD-3-clause
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+   * Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   * Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+   * Neither the name of the aafigure-team nor the
+     names of its contributors may be used to endorse or promote products
+     derived from this software without specific prior written permission.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ THIS SOFTWARE IS PROVIDED BY THE AAFIGURE-TEAM ''AS IS'' AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE AAFIGURE-TEAM BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ On Debian systems, the complete text of the BSD License can be found at
+ /usr/share/common-licenses/BSD.
+
+License: BOLA
+ BOLA - Buena Onda License Agreement (v1.0)
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ This work is provided 'as-is', without any express or implied warranty. In no
+ event will the authors be held liable for any damages arising from the use of
+ this work.
+ .
+ To all effects and purposes, this work is to be considered Public Domain.
+ .
+ However, if you want to be "buena onda", you should:
+ .
+ 1. Not take credit for it, and give proper recognition to the authors.
+ 2. Share your modifications, so everybody benefits from them.
+ 3. Do something nice for the authors.
+ 4. Help someone who needs it.
+ 5. Don't waste. Anything, but specially energy that comes from natural
+    non-renewable resources.
+ 6. Be tolerant. Everything that's good in nature comes from cooperation.

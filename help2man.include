@@ -1,0 +1,23 @@
+[NAME]
+aafigure - ASCII art to image converter
+
+/ASCII art to image \(SVG, PNG, JPEG, PDF and more\) converter\./
+aafigure is a command line tool that converts drawings in text files to images. Several output formats are supported (SVG, PDF, PNG, JPG and more).
+
+Note that PDF output requires the Reportlab Python library and bitmap formats
+require the Python Imaging Library (PIL).
+
+[EXAMPLES]
+Convert a drawing to a PDF file:
+
+    aafigure drawing.txt -o drawing.pdf
+
+Read from stdin and output a PNG image on stdout:
+
+    aafigure -t png
+
+[AUTHOR]
+aafigure-team: http://launchpad.net/aafigure
+
+[REPORTING BUGS]
+Please report bugs at http://bugs.launchpad.net/aafigure
